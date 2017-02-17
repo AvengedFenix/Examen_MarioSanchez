@@ -1,6 +1,8 @@
 #include <string>
 #include <vector>
+#include "PequenasFamiliasNobles.h"
 
+using namespace std;
 
 #ifndef STARK_H
 #define STARK_H
@@ -32,6 +34,7 @@ class Stark{
 		string getAniEmble();
 		string getLema();
 		//Getter de vector
+		int getEjer(vector<PequenasFamiliasNobles*> ejer);
 		string getGuerrero();
 		int getIntegrantes();
 
