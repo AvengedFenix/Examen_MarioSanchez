@@ -73,11 +73,11 @@ int Lannister::getIntegrantes(){
 }
 
 Lannister::~Lannister(){
-cout<<"Limpiando objeto Lannister"<<endl;
-	for(int i = 0; i < ejer.size(); i++){
-		delete this->ejer[i];
-	}
-	this->ejer.clear();
+	cout<<"Limpiando objeto Lannister"<<endl;
+		for(int i = 0; i < ejer.size(); i++){
+			delete this->ejer[i];
+		}
+		this->ejer.clear();
 }
 
 

@@ -18,7 +18,7 @@ class Stark{
 		int integrantes;
 	
 	public:
-		Stark();
+		Stark(string, int, string, string , string, int);
 		//Setters
 		void setJefeFamilia(string);
 		void setCantLobos(int);

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Targaryen::Targaryen(){
+Targaryen::Targaryen(string reina, string aniEmble, string lema, int cantDrag, string guerrero, int integrantes){
 
 }
 

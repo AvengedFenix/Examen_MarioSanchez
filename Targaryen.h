@@ -18,7 +18,7 @@ class Targaryen{
 		int integrantes;
 	
 	public:
-		Targaryen();
+		Targaryen(string, string, string, int, string, int);
 		//Setters
 		void setReina(string);
 		void setAniEmble(string);

@@ -31,6 +31,17 @@ int main(){
 				cin>>agregarmenu;
 				switch(agregarmenu){
 					case 1:{
+						cout<<"Stark"<<endl;
+						cout<<"Ingrese el Jefe de la fam"<<endl;
+						string jefe;
+						cin>>jefe;
+						cout<<"ingrese la cant de lobos"<<endl;
+						int cant;
+						cin>>cant;
+						cout<<"ingrese el animal emblema"<<endl;
+						string emble;
+						cin>>emble;
+						cout<<"Ingrese el lema"<<endl;
 						
 						break;
 					}
