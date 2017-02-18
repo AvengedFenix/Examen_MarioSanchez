@@ -17,7 +17,7 @@ int main(){
 	vector<Targaryen*> tar;
 	Dothraki* d;
 	GuardiaReal* g;
-	Lannister* l;
+	
 	PequenasFamiliasNobles* p;
 	
 	cout<<"Desea ingresar al programa? S/N"<<endl;
@@ -66,7 +66,7 @@ int main(){
 						int cantD;
 						string gue;
 						int intee;
-						cout<<"Ingrese en el siguiente orden, separado por enter, 1. Nombre reina\n2. Animal emblema\n 3.el Lema\n 4. cantidad de dragones\n 5. guerrero\n 6. numero de integrantes"<<endl;
+						cout<<"Ingrese en el siguiente orden, separado por enter,\n 1. Nombre reina\n2. Animal emblema\n 3.el Lema\n 4. cantidad de dragones\n 5. guerrero\n 6. numero de integrantes"<<endl;
 						cin>>r;
 						cin>>aniEmble;
 						cin>>lema;
@@ -77,10 +77,79 @@ int main(){
 						tar.push_back(t);
 						break;
 					}
+					case 3:{
+						Lannister* l;
+						cout<<"Lanninster"<<endl;
+						string jefe;
+						string Emb;
+						string lem;
+						int fuer;
+						string guerr;
+						int inteee;
+						cout<<"Ingrese en el siguiente orden, separado por enter,\n 1. Nombre jefe\n2. Animal emblema\n 3.el Lema\n 4. Fuerza montana\n 5. guerrero\n 6. numero de integrantes"<<endl;
+						cin>>jefe;
+						cin>>Emb;
+						cin>>lem;
+						cin>>fuer;
+						cin>>guerr;
+						cin>>inteee;
+						l = new Lannister(jefe,Emb,lem,fuer,guerr,inteee);
+						lann.push_back(l);
+					break;
 				}
+			
+			} //end switch 2
+			
 				break;
-			}
-		}
+			}// end case 1
+			case 2:{
+				cout<<"Stark\n"<<endl;
+				for(int i = 0; i< star.size(); i++){
+					cout<<star[i]->getJefeFamilia();
+				}	//end for
+				cout<<"Targaryen\n"<<endl;
+				for(int i = 0; i< star.size(); i++){
+					cout<<tar[i]->getReina();
+				}	//end for
+				cout<<"Lannister"<<endl;
+				for(int i = 0; i< star.size(); i++){
+					cout<<lann[i]->getJefeFamilia();
+				}	//end for
+				
+				break;
+			} //end case 2
+			case 3:{
+					cout<<"1.Stark, 2.Targaryen, 3.Lannister"<<endl;
+					int agregarmenu2;
+					cin>>agregarmenu2;
+					switch(agregarmenu2){
+						case 1:{
+						
+							cout<<"Stark\nIngrese la posicion a eliminar"<<endl;
+							int pos1;
+						//	star.erase(pos1);
+						cout<<"Eliminado con exito"<<endl;
+							break;
+						}
+						case 2:{
+							cout<<"Targaryen\nIngrese la posicion a eliminar"<<endl;
+							int pos2;
+						//	tar.erase(pos2);
+												cout<<"Eliminado con exito"<<endl;
+							break;
+						}
+						case 3:{
+							cout<<"Lanninster\nIngrese la posicion a eliminar"<<endl;
+							int pos3;
+						//	lann.erase(pos3);
+												cout<<"Eliminado con exito"<<endl;
+						break;
+					}
+			
+				} //end switch 2
+				break;
+			} //end case 3
+		}// end switch 1
 		
 		
 	}

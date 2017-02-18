@@ -19,7 +19,7 @@ class Lannister{
 		int integrantes;
 	
 	public:
-		Lannister(string, string,string, int ,string, in);
+		Lannister(string, string,string, int ,string, int);
 		//Setters
 		void setJefeFamilia(string);
 		
