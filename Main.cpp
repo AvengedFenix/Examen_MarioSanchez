@@ -12,11 +12,14 @@ using namespace std;
 
 
 int main(){
+	vector<Stark*> star;
+	vector<Lannister*> lann;
+	vector<Targaryen*> tar;
 	Dothraki d;
 	GuardiaReal g;
 	Lannister l;
 	PequenasFamiliasNobles p;
-	Stark s;
+	
 	Targaryen t;
 	cout<<"Desea ingresar al programa? S/N"<<endl;
 	char resp = 's';
@@ -31,6 +34,7 @@ int main(){
 				cin>>agregarmenu;
 				switch(agregarmenu){
 					case 1:{
+						Stark* s;
 						cout<<"Stark"<<endl;
 						cout<<"Ingrese el Jefe de la fam"<<endl;
 						string jefe;
@@ -42,7 +46,16 @@ int main(){
 						string emble;
 						cin>>emble;
 						cout<<"Ingrese el lema"<<endl;
-						
+						string lema;
+						cin>>lema
+						cout<<"ingrese el guerrero"<<endl;
+						string guerrero;
+						cin>>guerrero;
+						cout<<"Ingrese los integrantes"<<endl;
+						int inte;
+						cin>>inte;
+						s = new Stark(jefe, cant, emble, lema, guerrero, inte);
+						star.push_back(s);
 						break;
 					}
 				}
