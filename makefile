@@ -20,7 +20,7 @@ GuardiaReal.o:	GuardiaReal.cpp GuardiaReal.h
 Targaryen.o:	Targaryen.cpp Targaryen.h Dothraki.h
         g++ -c Targaryen.cpp
 
-Dothraki.o:	Dothraki.cpp Dothraki.h
+Dothraki.o:		Dothraki.cpp Dothraki.h
             g++ -c Dothraki.cpp
 
 clean:	rm ".o Examen1

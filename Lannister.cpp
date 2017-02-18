@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Lannister::Lannister(){
+Lannister::Lannister(string jefeFamilia, string aniEmble ,string lema, int fuerzaMontana ,string guerrero, int integrantes){
 
 }
 

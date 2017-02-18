@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Stark::Stark(jefeFamilia, cantLobos, aniEmble, lema, guerrero, integrantes){
+Stark::Stark(string jefeFamilia, int cantLobos, string aniEmble, string lema, string guerrero, int integrantes){
 
 }
 

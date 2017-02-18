@@ -15,12 +15,11 @@ int main(){
 	vector<Stark*> star;
 	vector<Lannister*> lann;
 	vector<Targaryen*> tar;
-	Dothraki d;
-	GuardiaReal g;
-	Lannister l;
-	PequenasFamiliasNobles p;
+	Dothraki* d;
+	GuardiaReal* g;
+	Lannister* l;
+	PequenasFamiliasNobles* p;
 	
-	Targaryen t;
 	cout<<"Desea ingresar al programa? S/N"<<endl;
 	char resp = 's';
 	while (resp == 's' || resp == 'S'){
@@ -47,7 +46,7 @@ int main(){
 						cin>>emble;
 						cout<<"Ingrese el lema"<<endl;
 						string lema;
-						cin>>lema
+						cin>>lema;
 						cout<<"ingrese el guerrero"<<endl;
 						string guerrero;
 						cin>>guerrero;
@@ -56,6 +55,26 @@ int main(){
 						cin>>inte;
 						s = new Stark(jefe, cant, emble, lema, guerrero, inte);
 						star.push_back(s);
+						break;
+					}
+					case 2:{
+						Targaryen* t;
+						cout<<"Targaryen"<<endl;
+						string r;
+						string aniEmble;
+						string lema;
+						int cantD;
+						string gue;
+						int intee;
+						cout<<"Ingrese en el siguiente orden, separado por enter, 1. Nombre reina\n2. Animal emblema\n 3.el Lema\n 4. cantidad de dragones\n 5. guerrero\n 6. numero de integrantes"<<endl;
+						cin>>r;
+						cin>>aniEmble;
+						cin>>lema;
+						cin>>cantD;
+						cin>>gue;
+						cin>>intee;
+						t = new Targaryen(r,aniEmble,lema,cantD,gue,intee);
+						tar.push_back(t);
 						break;
 					}
 				}
