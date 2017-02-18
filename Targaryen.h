@@ -1,6 +1,8 @@
 #include <string>
 #include <vector>
+#include "Dothraki.h"
 
+using namespace std;
 
 #ifndef TARGARYEN_H
 #define TARGARYEN_H
@@ -27,7 +29,7 @@ class Targaryen{
 		void setIntegrantes(int);
 		
 		//Getters
-		string getJefeFamilia();
+		string getReina();
 		string getAniEmble();
 		string getLema();
 		int getCantDrag();
